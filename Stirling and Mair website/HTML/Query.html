@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Query</title>
+
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="Query.css">
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Stirling & Mair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ourStaff.html">Our Staff</a></li>
+                <li><a href="Query.html"class="current">Ask a Query</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li> <a id="openSignIn2">Admin Sign in</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="info">
+
+        <article>
+            <h2>Fill out the form below to submit a query</h2>
+
+            <form1 class="form1" action="">
+                <label for="firstName"> Please enter your full name</label>
+                <input id="Name" type="text">
+
+                <label for="email">Please enter your email address</label>
+                <input id="email" type="email">
+
+                <label for="query">Please tell us your query</label>
+                <input id="Question" type="text">
+
+                <button type ="submit" id ="validate" onclick="validate()">Submit Query</button>
+                <h2 id='result'></h2>
+
+            </form1>
+
+        </article>
+
+
+    </section>
+    <aside>
+        <section class="external-links sidebar" >
+            <h2>External Links</h2>
+            <a href="https://www.mygov.scot/">Scottish Government Website</a>
+            <a href="http://www.scottishlaw.org.uk/">Scottish law website</a>
+            <a href="https://www.lawscot.org.uk/find-a-solicitor/">Law society of Scotland</a>
+            <a href="https://www.scotcourts.gov.uk/the-courts/court-locations/paisley-sheriff-court-and-justice-of-the-peace-court">Paisley Sheriff Court</a>
+        </section>
+        <section class="contact-details sidebar">
+            <h2>Address</h2>
+            <p>Stirling & Mair<br />
+                28 High Street<br />
+                Johnstone<br />
+                PA5 8AH</p>
+        </section>
+        <section  >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.515246982108!2d-4.511982884193463!3d55.8363727930111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48884b9e83c2ed75%3A0xc8881c5d9ebcfbef!2sStirling%20%26%20Mair%20Solicitors!5e0!3m2!1sen!2suk!4v1582214090418!5m2!1sen!2suk" width="97%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+        <section class="contact-details sidebar">
+            <h2>Contact Details</h2>
+            <p>Email - Example@stirlingandmair.co.uk</p>
+            <p>Contact Number - 012345678</p>
+
+        </section>
+    </aside>
+
+    <footer>
+        &copy; B00310250 Honours Project
+    </footer>
+
+
+
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="main">
+                <p class="sign" align="center">Sign-In</p>
+                <form>
+                    <p align="center">E-Mail</p>
+                    <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                    <p align="center">Password</p>
+                    <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                    <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                   <!-- <a id="btnSignup2" class="submit" align="center">Sign-Up</a> -->
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div><!-- .wrapper -->
+</body>
+
+<script>
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyC0xYNfPnUHhMUt2K6QnR1ZBKXc638-muU",
+        authDomain: "stirlingmair.firebaseapp.com",
+        databaseURL: "https://stirlingmair.firebaseio.com",
+        projectId: "stirlingmair",
+        storageBucket: "stirlingmair.appspot.com",
+        messagingSenderId: "799371855602",
+        appId: "1:799371855602:web:1620d5fb195abe9d13726b",
+        measurementId: "G-ME82RTF6MJ"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    firebase.database();
+    firebase.auth();
+</script>
+
+
+
+<script src="Admin.js"></script>
+<script src="emailValidation.js"></script>
+</html>

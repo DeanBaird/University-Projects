@@ -1,0 +1,160 @@
+form1 {
+    display: grid;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    width: 800px;
+    height: 500px;
+    padding: 1em;
+    float: left;
+}
+form1 input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+
+}
+form1 button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+}
+form1 button:hover {
+    background: lightskyblue;
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    outline: 3px solid lightskyblue;
+}
+
+@media (min-width: 400px) {
+    form {
+        grid-template-columns: 200px 1fr;
+        grid-gap: 16px;
+
+    }
+
+    label {
+        text-align: left;
+        grid-column: 1 / 2;
+    }
+
+    input,
+    button {
+        grid-column: 2 / 3;
+    }
+}
+
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;}
+body {
+    color: black;
+    background-color: #f9f8f6;
+    background-image: url("Background2.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 0px;}
+.wrapper {
+    width: 1250px;
+    margin: 20px auto 20px auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;}
+header {
+    height: 160px;
+    background-image: url("Header2.png");
+    background-size: 1275px 200px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+h1 {
+    text-indent: -9999px;
+    width: 940px;
+    height: 130px;
+    margin: 0px;}
+nav, footer {
+    clear: both;
+    color: #000000;
+    background-color: lightskyblue;
+    height: 30px;}
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;}
+nav li {
+    display: inline;
+    margin-right: 40px;}
+nav li a {
+    color: #000000;}
+nav li a:hover, nav li a.current {
+    color: #ffffff;}
+section.info {
+    float: left;
+    width: 950px;
+    }
+article {
+    clear: both;
+    overflow: auto;
+    width: 150%;
+    margin-left: 30px;}
+hgroup {
+    margin-top: 40px;}
+figure {
+    float: left;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid lightskyblue;}
+figcaption{
+    font-size: 90%;
+    text-align: left;
+}
+
+aside {
+    width: 289px;
+    border-left: 1px solid lightskyblue;
+    background-color: #b3c7d6ff;
+    float: left;
+    padding: 0px 0px 0px 10px;}
+aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid cornflowerblue;}
+aside section a:hover {
+    color: white;
+    background-color: blue;}
+a {
+    color: blue;
+    text-decoration: none;}
+h1, h2, h3 {
+    font-weight: normal;}
+h2 {
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
+    color: blue;}
+h3 {
+    margin: 0px 0px 10px 0px;
+    color: black;}
+aside h2 {
+    padding: 30px 0px 10px 0px;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    color: white}
+footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;}
+.sidebar{
+    text-align: center;
+}

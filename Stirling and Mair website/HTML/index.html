@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="Slideshow.css">
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Stirling & Mair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"class="current">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ourStaff.html">Our Staff</a></li>
+                <li><a href="Query.html">Ask a Query</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li><a id="openSignIn2">Admin Sign in</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <section class="info">
+        <article>
+
+
+            <hgroup>
+
+                <h2>Welcome to the Stirling & Mair wesbite</h2>
+
+            </hgroup>
+            <p>Stirling & Mair are solicitors firm who specialise in commercial legal areas.
+            With a vast amount of experience and expertise which<br> we use to help our valued customers.
+            Not only are we well versed in law we also like to get to know our customers so we can help<br>as best as we can.</p>
+            <p>We specialise in:</p>
+            <ul>
+                <li>Conveyancing</li>
+                <br>
+                <li>Powers of Attorney</li>
+                <br>
+                <li>Wills</li>
+                <br>
+                <li>Guardianships</li>
+                <br>
+                <li>Family Law</li>
+            </ul>
+
+
+        </article>
+        <article>
+
+
+            <hgroup>
+                <h3>History of Stirling and Mair</h3>
+
+            </hgroup>
+            <p>Stirling & Mair was founded in 2002 in Johnstone. In 2004 they moved into their current office building, starting off with a<br>
+            workforce of just 5 people now Stirling & Mair have over 15 employees. Nowadays we speicalise in a number of fields<br>
+            however we first began practicing on primarily conveyancing and wills. Located in Johnstone high street Stirling & Mair is the<br>
+            longest standing solicitors office currently situated in Johnsotne town center. </p>
+
+
+
+
+
+
+        </article>
+
+        <article>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="Header2.png" style=" height:300px; width:62%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Office.jpg" style="height:300px; width:62%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Solicitor.jpg" style="height:300px; width:62%">
+                </div>
+
+                <br>
+
+                 <div style="text-align: left">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                  </div>
+
+              </div>
+
+
+
+          </article>
+
+
+
+
+
+      </section>
+      <aside>
+          <section class="external-links sidebar" >
+              <h2>External Links</h2>
+              <a href="https://www.mygov.scot/">Scottish Government Website</a>
+              <a href="http://www.scottishlaw.org.uk/">Scottish law website</a>
+              <a href="https://www.lawscot.org.uk/find-a-solicitor/">Law society of Scotland</a>
+              <a href="https://www.scotcourts.gov.uk/the-courts/court-locations/paisley-sheriff-court-and-justice-of-the-peace-court">Paisley Sheriff Court</a>
+          </section>
+          <section class="address sidebar">
+              <h2>Address</h2>
+              <p>Stirling & Mair<br />
+                  28 High Street<br />
+                  Johnstone<br />
+                  PA5 8AH</p>
+          </section>
+          <section  >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.515246982108!2d-4.511982884193463!3d55.8363727930111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48884b9e83c2ed75%3A0xc8881c5d9ebcfbef!2sStirling%20%26%20Mair%20Solicitors!5e0!3m2!1sen!2suk!4v1582214090418!5m2!1sen!2suk" width="97%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </section>
+          <section class="contact-details sidebar">
+              <h2>Contact Details</h2>
+              <p>Email - Example@stirlingandmair.co.uk</p>
+              <p>Contact Number - 012345678</p>
+
+          </section>
+      </aside>
+      <script>
+
+          var firebaseConfig = {
+              apiKey: "AIzaSyC0xYNfPnUHhMUt2K6QnR1ZBKXc638-muU",
+              authDomain: "stirlingmair.firebaseapp.com",
+              databaseURL: "https://stirlingmair.firebaseio.com",
+              projectId: "stirlingmair",
+              storageBucket: "stirlingmair.appspot.com",
+              messagingSenderId: "799371855602",
+              appId: "1:799371855602:web:1620d5fb195abe9d13726b",
+              measurementId: "G-ME82RTF6MJ"
+          };
+
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+      </script>
+      <script src="Admin.js"></script>
+      <footer>
+          &copy; B00310250 Honours Project
+      </footer>
+
+
+
+
+      <div id="myModal2" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="main">
+                  <p class="sign" align="center">Sign-In</p>
+                  <form>
+                      <p align="center">E-Mail</p>
+                      <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                      <p align="center">Password</p>
+                      <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                      <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                      <!--<a id="btnSignup2" class="submit" align="center">Sign-Up</a> -->
+                  </form>
+              </div>
+          </div>
+
+      </div>
+  </div><!-- .wrapper -->
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000);
+    }</script>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<title>FF CONF - Sponsors</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="hover.css">
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="signin.css">
+<script src="navigation.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBlKv4ktOyJhi24p5znUgm7BZJX2FKJLDc",
+        authDomain: "internet-technologies.firebaseapp.com",
+        databaseURL: "https://internet-technologies.firebaseio.com",
+        projectId: "internet-technologies",
+        storageBucket: "internet-technologies.appspot.com",
+        messagingSenderId: "468744838884",
+        appId: "1:468744838884:web:b346fd9ac92de72b34d6f1",
+        measurementId: "G-Z5YR5ZBV8V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth();
+</script>
+
+<script src="newloginadmin.js"></script>
+
+<body>
+
+<<div align="center" style="padding: 15px; background-color: black;">
+    <img src="FFLogo.png" height="100px" width="100px">
+    <h1 style="color: white;">Future Friends Conference</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="KeySpeakers.html">Key Speakers</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="Location.html">Location</a>
+    <a href="Scholarship.html">Scholarship</a>
+    <a href="Sponsors.html" class="active">Sponsors</a>
+    <a href="CodeOfConduct.html">Code Of Conduct</a>
+    <a href="PreviousConferences.html">Previous Conferences</a>
+    <a id="openSignIn2">Admin Access</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<h1 style="text-align: center;"><u>Our Sponsors</u></h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card tomato">
+            <h3>Platinum Sponsor</h3><br>
+            <img src="Mozilla.png" height="150px" width="200px">
+            <p>Mozilla</p>
+            <a href="https://www.mozilla.org/en-US/">Mozilla Website</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card blue">
+            <h3>Gold Sponsor</h3><br>
+            <img src="LegalGeneral.jpg" height="150px" width="200px">
+            <p>Legal & General </p>
+            <a href="https://careers.legalandgeneralgroup.com/">Legal & General Website</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card green">
+            <h3>Day Sponsors</h3><br>
+            <img src="Brandwatch.png" height="150px" width="200px">
+            <p>BrandWatch</p>
+            <a href="https://www.brandwatch.com/careers/">Brandwatch Website</a>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="column">
+        <div class="card purple">
+            <h3>Scholarship Sponsors</h3><br>
+            <img src="Nexmo.png" height="150px" width="200px">
+            <p>Nexmo</p>
+            <a href="(https://developer.nexmo.com/">Nexmo Website</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card yellow">
+            <h3>Micro Sponsor</h3><br>
+            <img src="JSBIN.png" height="150px" width="200px">
+            <p>JSBIN </p>
+            <a href="https://jsbin.com/?html,outpu">JSBIN Website</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card pink">
+            <h3>Become a Sponsor</h3><br>
+            <img src="BecomeSponsor.png" height="150px" width="200px">
+            <p>Enter an email address:</p>
+            <input id='email'>
+            <button type='submit' id='validate'>Validate!</button>
+            <h2 id='result'></h2>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div align="center" style="padding: 25px; background-color: black; color: white;">
+    <h3>Conference Web App</h3>
+    <h3>B00303338 &amp; B00310250</h3>
+</div>
+
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="main">
+            <p class="sign" align="center">Sign-In</p>
+            <form>
+                <p align="center">E-Mail</p>
+                <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                <p align="center">Password</p>
+                <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                <a id="btnSignup2" class="submit" align="center">Sign-Up</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="EmailValidation.js"></script>
+
+</body>
+
+</html>

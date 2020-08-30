@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<title>FFCONF - Code Of Conduct</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="hover.css">
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="signin.css">
+<script src="navigation.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBlKv4ktOyJhi24p5znUgm7BZJX2FKJLDc",
+        authDomain: "internet-technologies.firebaseapp.com",
+        databaseURL: "https://internet-technologies.firebaseio.com",
+        projectId: "internet-technologies",
+        storageBucket: "internet-technologies.appspot.com",
+        messagingSenderId: "468744838884",
+        appId: "1:468744838884:web:b346fd9ac92de72b34d6f1",
+        measurementId: "G-Z5YR5ZBV8V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth();
+</script>
+
+<script src="newloginadmin.js"></script>
+
+
+<body>
+
+<div align="center" style="padding: 15px; background-color: black;">
+    <img src="FFLogo.png" height="100px" width="100px">
+    <h1 style="color: white;">Future Friends Conference</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="KeySpeakers.html">Key Speakers</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="Location.html">Location</a>
+    <a href="Scholarship.html">Scholarship</a>
+    <a href="Sponsors.html">Sponsors</a>
+    <a href="CodeOfConduct.html" class="active">Code Of Conduct</a>
+    <a href="PreviousConferences.html">Previous Conferences</a>
+    <a id="openSignIn2">Admin Access</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div style="text-align: center;">
+    <h1><u>Code of Conduct</u></h1>
+    <h3>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</h3>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card tomato">
+            <img src="CodeOfConduct1.jpg" height="200px" width="200px">
+            <ul><li>Harassment includes offensive verbal comments related to gender identity &amp; expression, age, sexual orientation,
+                disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces,
+                deliberate intimidation, stalking, harassing photography or recording, sustained disruption of talks or other events, and inappropriate physical contact.</li> </ul>
+            <ul><li>Participants asked to stop harassing behaviour are expected to comply immediately</li></ul>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card blue">
+            <img src="CodeOfConduct2.jpg" height="200px" width="200px">
+            <ul><li>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities,
+                or other material. Booth staff should not use sexualised clothing/uniforms, or otherwise create a sexualised environment.</li></ul>
+            <ul><li>If a participant engages in harassing behaviour, the conference organisers may take any action they deem appropriate, including
+                warning the offender or expulsion from the conference with no refund.</li></ul>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card green">
+            <img src="CodeOfConduct3.jpg" height="200px" width="200px">
+            <ul><li>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference
+                staff immediately. Conference staff can be identified as they'll be wearing branded clothing/badges.</li></ul>
+            <ul><li>Conference staff happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise
+                assist those experiencing harassment to feel safe for the duration of the conference. </li></ul>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div align="center" style="padding: 25px; background-color: black; color: white;">
+    <h3>Conference Web App</h3>
+    <h3>B00303338 &amp; B00310250</h3>
+</div>
+
+
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="main">
+            <p class="sign" align="center">Sign-In</p>
+            <form>
+                <p align="center">E-Mail</p>
+                <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                <p align="center">Password</p>
+                <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                <a id="btnSignup2" class="submit" align="center">Sign-Up</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

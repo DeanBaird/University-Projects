@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<title>FFCONF - Key Speakers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hover.css">
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="signin.css">
+<script src="navigation.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBlKv4ktOyJhi24p5znUgm7BZJX2FKJLDc",
+        authDomain: "internet-technologies.firebaseapp.com",
+        databaseURL: "https://internet-technologies.firebaseio.com",
+        projectId: "internet-technologies",
+        storageBucket: "internet-technologies.appspot.com",
+        messagingSenderId: "468744838884",
+        appId: "1:468744838884:web:b346fd9ac92de72b34d6f1",
+        measurementId: "G-Z5YR5ZBV8V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth();
+</script>
+
+<script src="newlogin.js"></script>
+<script src="newloginadmin.js"></script>
+
+<body>
+
+<div align="center" style="padding: 15px; background-color: black;">
+    <img src="FFLogo.png" height="100px" width="100px">
+    <h1 style="color: white;">Future Friends Conference</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="KeySpeakers.html" class="active">Key Speakers</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="Location.html">Location</a>
+    <a href="Scholarship.html">Scholarship</a>
+    <a href="Sponsors.html">Sponsors</a>
+    <a href="CodeOfConduct.html">Code Of Conduct</a>
+    <a href="PreviousConferences.html">Previous Conferences</a>
+    <a id="openSignIn2">Admin Access</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<h1 style="text-align: center;"><u>Key Speakers</u></h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card tomato">
+            <h3><b><u>Sharon Steed</u></b></h3><br>
+            <img id="Sharon" height="200px" width="200px">
+            <p><b>Title</b> - Engaging Empathy</p>
+            <p><b>Description</b> - Empathy &amp; vulnerability aren't two words associated with professional success,
+                but they're invaluable to achieving long-term goals leaders set for their companies.</p>
+            <p><b>Time Slot</b>- 9:50-10:20</p>
+            <p><b>Link</b>- <a href="https://twitter.com/sharonsteed">@sharonsteed</a></p>
+            <object data="SharonSteed.pdf" type="application/x-pdf" title="SamplePdf" width="500" height="720">
+                <a href="SharonSteed.pdf">My Presentation</a>
+            </object>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card blue">
+            <h3><b><u>Amina Adewusi</u></b></h3><br>
+            <img id="Amina" height="200px" width="200px">
+            <p><b>Title</b> - What does it take to become a developer in 2020?</p>
+            <p><b>Description</b> - Amina shares her story about what it takes to become a developer after teaching herself how to code, juggling a full-time job and baby.</p>
+            <p><b>Time Slot</b> - 10:30-11:00</p>
+            <p><b>Link</b> - <a href="https://twitter.com/a_adewusi">@aminadewusi</a></p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card green">
+            <h3><b><u>Alice Bartlett</u></b></h3><br>
+            <img id="Alice" height="200px" width="200px">
+            <p><b>Title</b> - Getting More From Git</p>
+            <p><b>Description</b> - Git is like a Swiss Army Knife for telling the story of your project.
+                In this talk we're going to learn about some more advanced Git commands and some history too.</p>
+            <p><b>Time Slot</b> - 11:30-12:00</p>
+            <p><b>Link</b> - <a href="https://twitter.com/alicebartlett">@alicebartlett</a> </p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="column">
+        <div class="card purple">
+            <h3><b><u>Laura Kalbag</u></b></h3><br>
+            <img id="Laura" height="200px" width="200px">
+            <p><b>Title</b> - Unbelievable Things You Never Knew About Tracking</p>
+            <p><b>Description</b> - The web, and big tech at large, is tracking our every move, habit, and facial expression. As developers who are also users, we both contribute to the surveillance system and are exploited by it. But it doesn’t have to be this way.</p>
+            <p><b>Time Slot</b> - 12:00-12:30</p>
+            <p><b>Link</b> - <a href="https://twitter.com/LauraKalbag">@laurakalberg</a> </p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card yellow">
+            <h3><b><u>Harry Roberts</u></b></h3><br>
+            <img id="Harry" height="200px" width="200px">
+            <p><b>Title</b> - From Milliseconds to Millions: A Look at the Numbers Powering Web Performance</p>
+            <p><b>Description</b> - We all know performance is big business, but how big? Let's take a look at some of the numbers powering the web performance industry, from both sides of the table.</p>
+            <p><b>Time Slot</b> - 14:00-14:30</p>
+            <p><b>Link</b> - <a href="https://twitter.com/csswizardry">@csswizardry</a> </p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card pink">
+            <h3><b><u>Anna Migas</u></b></h3><br>
+            <img id="Anna" height="200px" width="200px">
+            <p><b>Title</b> - Effortless Performance Debugging</p>
+            <p><b>Description</b> - During the session, we will be talking about the causes of painful performance and also look into simple and actionable steps how to make a website more performant with a little effort.</p>
+            <p><b>Time Slot</b> - 14:30-15:00</p>
+            <p><b>Link</b> - <a href="https://twitter.com/szynszyliszys">@szynszyliszys</a> </p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="column">
+        <div class="card teal">
+            <h3><b><u>Charlotte Dann</u></b></h3><br>
+            <img id="Charlotte" height="200px" width="200px">
+            <p><b>Title</b> - Taking The Web Off The Screen</p>
+            <p><b>Description</b> - The rise of generative art has brought a whole new wave of creativity to the web; this talk is about the myriad of ways we can use all that coding knowledge to make cool art in the physical realm.</p>
+            <p><b>Time Slot</b> - 16:00-16:30</p>
+            <p><b>Link</b> - <a href="https://twitter.com/charlotte_dann">@charlottedann</a> </p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card orange">
+            <h3><b><u>Suz Hinton</u></b></h3><br>
+            <img id="Suz" height="200px" width="200px">
+            <p><b>Title</b> - Adventures in Reinventing Interfaces</p>
+            <p><b>Description</b> - Computers existed for a long time before the web made its debut. Can modern web interfaces help invigorate the small computing space, while driving a new set of developers to invent better &amp; more playful experiences?</p>
+            <p><b>Time Slot</b> - 16:30-17:00</p>
+            <p><b>Link</b> - <a href="https://twitter.com/noopkat">@noopkat</a> </p>
+            <a href="KeySpeakers.html">My Presentation</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card green">
+            <h3><b><u>Live Discussion</u></b></h3><br>
+            <img src="Discussion.png" height="266px" width="300px"><br>
+            <p><b>To take part in the live discussions please click on the link below to sign in.</b></p><br>
+            <p><a class="discussion" align="center" id="openSignIn">Live Discussion</a></p>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div align="center" style="padding: 25px; background-color: black; color: white;">
+    <h3>Conference Web App</h3>
+    <h3>B00303338 &amp; B00310250</h3>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="main">
+            <p class="sign" align="center">Sign-In</p>
+            <form>
+                <p align="center">E-Mail</p>
+                <input id="txtEmail" class="un" type="text" align="center" placeholder=" ">
+                <p align="center">Password</p>
+                <input id="txtPassword" class="pass" type="password" align="center" placeholder=" ">
+                <a id="btnLogin" class="submit" align="center">Sign-In</a><br> <br>
+                <a id="btnSignup" class="submit" align="center">Sign-Up</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="main">
+            <p class="sign" align="center">Admin Sign-In</p>
+            <form>
+                <p align="center">E-Mail</p>
+                <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                <p align="center">Password</p>
+                <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                <a id="btnSignup2" class="submit" align="center">Sign-Up</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="SpeakerImages.js"></script>
+</body>
+</html>

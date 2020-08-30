@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Homepage</title>
+    <link rel="stylesheet" href="ourStaff.css">
+    <link rel="stylesheet" href="signin.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyC0xYNfPnUHhMUt2K6QnR1ZBKXc638-muU",
+            authDomain: "stirlingmair.firebaseapp.com",
+            databaseURL: "https://stirlingmair.firebaseio.com",
+            projectId: "stirlingmair",
+            storageBucket: "stirlingmair.appspot.com",
+            messagingSenderId: "799371855602",
+            appId: "1:799371855602:web:1620d5fb195abe9d13726b",
+            measurementId: "G-ME82RTF6MJ"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="Admin.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Stirling & Mair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ourStaff.html"class="current">Our Staff</a></li>
+                <li><a href="Query.html">Ask a Query</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li> <a id="openSignIn2">Admin Sign in</a></li>
+                <li><a href="Terms.html">Terms of Use</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="info">
+        <article>
+            <figure>
+                <img src="SolicitorMale.jpg" alt ="Jim White"/>
+
+
+            </figure>
+
+            <hgroup>
+                <h2>Jim White</h2>
+                <h3>Solicitor</h3>
+
+            </hgroup>
+            <p>Jim White is a highly trained solicitor who has worked at Stirling & Mair for 21<br> years and became a partner in the firm in 2014. A man thats pasison for law is the<br> same as it was when he joined Stirling & Mair, Jim is always on hand to help.</p>
+        </article>
+
+        <article>
+            <figure>
+                <img src="FemaleSolicitor.png" alt ="Susan Smith"/>
+
+
+            </figure>
+
+            <hgroup>
+                <h2>Susan Smith</h2>
+                <h3>Solicitor</h3>
+
+            </hgroup>
+            <p>Susan Smith has the unique distinction of the youngest solicitor to ever make<br> partner back in 2015 at the age of 28. joining the team as an apprentice in 2011<br> she has quickly left her mark at Stirling & Mair as one of the brightest solicitors in <br>the country.</p>
+        </article>
+
+        <article>
+            <figure>
+                <img src="ConveyancingSolicitor.jpg" alt ="Fiona McCallister"/>
+
+
+            </figure>
+
+            <hgroup>
+                <h2>Fiona McCallister</h2>
+                <h3>Conveyancing Solicitor</h3>
+
+            </hgroup>
+            <p>Fiona McCallister specialises in Conveyancing and for good reason. With an <br>almost natural intellect in conveyancing she can help you with almost any<br> problem. A bright spark and a lovely person in and out of the office, she is<br> defintely the person to go to for your conveyancing needs.</p>
+        </article>
+
+        <article>
+            <figure>
+                <img src="Paralegal.jpg" alt ="Alan Gow"/>
+
+
+            </figure>
+
+            <hgroup>
+                <h2>Alan Gow</h2>
+                <h3>Paralegal</h3>
+
+            </hgroup>
+            <p>Alan Gow, or as we like to call him Wikipedia, plays a vital role in assisting our<br> solicitors by doing lots of research and making sure no piece of information is<br> missed. If there is any obscure piece of law that has always been missed, no doubt<br> Alan will be the one to find it.</p>
+        </article>
+    </section>
+    <aside>
+        <section class="external-links sidebar" >
+            <h2>External Links</h2>
+            <a href="https://www.mygov.scot/">Scottish Government Website</a>
+            <a href="http://www.scottishlaw.org.uk/">Scottish law website</a>
+            <a href="https://www.lawscot.org.uk/find-a-solicitor/">Law society of Scotland</a>
+            <a href="https://www.scotcourts.gov.uk/the-courts/court-locations/paisley-sheriff-court-and-justice-of-the-peace-court">Paisley Sheriff Court</a>
+        </section>
+        <section class="contact-details sidebar">
+            <h2>Address</h2>
+            <p>Stirling & Mair<br />
+                28 High Street<br />
+                Johnstone<br />
+                PA5 8AH</p>
+        </section>
+        <section  >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.515246982108!2d-4.511982884193463!3d55.8363727930111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48884b9e83c2ed75%3A0xc8881c5d9ebcfbef!2sStirling%20%26%20Mair%20Solicitors!5e0!3m2!1sen!2suk!4v1582214090418!5m2!1sen!2suk" width="97%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+        <section class="contact-details sidebar">
+            <h2>Contact Details</h2>
+            <p>Email - Example@stirlingandmair.co.uk</p>
+            <p>Contact Number - 012345678</p>
+
+        </section>
+    </aside>
+    <footer>
+        &copy; B00310250 Honours Project
+    </footer>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="main">
+                <p class="sign" align="center">Sign-In</p>
+                <form>
+                    <p align="center">E-Mail</p>
+                    <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                    <p align="center">Password</p>
+                    <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                    <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                    <!--<a id="btnSignup2" class="submit" align="center">Sign-Up</a> -->
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div><!-- .wrapper -->
+</body>
+</html>

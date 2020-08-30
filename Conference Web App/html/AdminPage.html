@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FF CONF - Admin Access</title>
+</head>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="location.css">
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="signin.css">
+<script src="navigation.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBlKv4ktOyJhi24p5znUgm7BZJX2FKJLDc",
+        authDomain: "internet-technologies.firebaseapp.com",
+        databaseURL: "https://internet-technologies.firebaseio.com",
+        projectId: "internet-technologies",
+        storageBucket: "internet-technologies.appspot.com",
+        messagingSenderId: "468744838884",
+        appId: "1:468744838884:web:b346fd9ac92de72b34d6f1",
+        measurementId: "G-Z5YR5ZBV8V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.database();
+    firebase.auth();
+
+</script>
+<script src = "AdminRemove.js"></script>
+<script src="newloginadmin.js"></script>
+
+<body>
+
+<div align="center" style="padding: 15px; background-color: black;">
+    <img src="FFLogo.png" height="100px" width="100px">
+    <h1 style="color: white;">Future Friends Conference</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="KeySpeakers.html">Key Speakers</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="Location.html">Location</a>
+    <a href="Scholarship.html">Scholarship</a>
+    <a href="Sponsors.html">Sponsors</a>
+    <a href="CodeOfConduct.html">Code Of Conduct</a>
+    <a href="PreviousConferences.html">Previous Conferences</a>
+    <a href="AdminPage.html" class="active">Admin Access</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<h1 style="text-align: center"><u>FFCONF Admin Access</u></h1>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h3><u>Add Speaker (Not Functional)</u></h3><br>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td><textarea id ="Name" rows="1" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Title: </td>
+                    <td><textarea id ="Title" rows="1" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Description: </td>
+                    <td><textarea id ="Comment" rows="12" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Time: </td>
+                    <td><textarea id ="Time" rows="1" cols="20"></textarea></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h3><u>Remove Comment (Functional)</u></h3>
+            <select id="option">
+                <option>Select Speaker Below:</option>
+                <option value="Alice">Alice</option>
+                <option value="Amina">Amina</option>
+                <option value="Anna">Anna</option>
+                <option value="Charlotte">Charlotte</option>
+                <option value="Harry">Harry</option>
+                <option value="Laura">Laura</option>
+                <option value="Sharon">Sharon</option>
+                <option value="Suz">Suz</option>
+            </select>
+            <button id="btnRemoveComment">Go to Page</button>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h3><u>Edit Locations (Not Functional)</u></h3>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1bPBLQXap1vfaayt1xmoh324bvHV737HB" width="475px" height="350px"></iframe>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div align="center" style="padding: 25px; background-color: black; color: white;">
+    <h3>Conference Web App</h3>
+    <h3>B00303338 &amp; B00310250</h3>
+</div>
+
+</body>
+</html>

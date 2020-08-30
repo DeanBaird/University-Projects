@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FF CONF - Home Page</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hover.css">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="signin.css">
+<script src="navigation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBlKv4ktOyJhi24p5znUgm7BZJX2FKJLDc",
+        authDomain: "internet-technologies.firebaseapp.com",
+        databaseURL: "https://internet-technologies.firebaseio.com",
+        projectId: "internet-technologies",
+        storageBucket: "internet-technologies.appspot.com",
+        messagingSenderId: "468744838884",
+        appId: "1:468744838884:web:b346fd9ac92de72b34d6f1",
+        measurementId: "G-Z5YR5ZBV8V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth();
+</script>
+
+<script src="newloginadmin.js"></script>
+
+<body>
+
+<div align="center" style="padding: 15px; background-color: black;">
+    <img src="FFLogo.png" height="100px" width="100px">
+    <h1 style="color: white;">Future Friends Conference</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="KeySpeakers.html">Key Speakers</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="Location.html">Location</a>
+    <a href="Scholarship.html">Scholarship</a>
+    <a href="Sponsors.html">Sponsors</a>
+    <a href="CodeOfConduct.html">Code Of Conduct</a>
+    <a href="PreviousConferences.html">Previous Conferences</a>
+    <a id="openSignIn2">Admin Access</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<br>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Slideshow1.jpg" style=" height:400px; width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Slideshow2.jpg" style="height:400px; width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Slideshow3.jpg" style="height:400px; width:100%">
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="column">
+        <div class="card tomato">
+            <h3>What?</h3><br>
+            <img src="What.jpg" height="150px" width="200px">
+            <p>Future Friends Conference is a full day of eight carefully curated sessions for an audience that cares about the future of the web, and who want their ideas challenged. </p>
+            <p>This conference was created by Remy and Julie Sharp. </p>
+
+
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card blue">
+            <h3>Why?</h3><br>
+            <img src="Why.png" height="150px" width="200px">
+            <p>This annual conference aims to give key speakers a platform to share their knowledge and ideas of web development thus inspiring/teaching others about their field. </p>
+            <p>It also allows like minded people to connect and share ideas. </p>
+
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card green">
+            <h3>Who?</h3><br>
+            <img src="Who.png" height="150px" width="200px">
+            <p>The target audience for this conference is those who have a keen interest in web development. Whether you're a seasoned pro whos just looking for some other peoples take on web development or you are just starting your web development journey and looking to learn this conference is for you. </p>
+
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div align="center" style="padding: 25px; background-color: black; color: white;">
+    <h3>Conference Web App</h3>
+    <h3>B00303338 &amp; B00310250</h3>
+</div>
+
+
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="main">
+            <p class="sign" align="center">Admin Sign-In</p>
+            <form>
+                <p align="center">E-Mail</p>
+                <input id="txtEmail2" class="un" type="text" align="center" placeholder=" ">
+                <p align="center">Password</p>
+                <input id="txtPassword2" class="pass" type="password" align="center" placeholder=" ">
+                <a id="btnLogin2" class="submit" align="center">Sign-In</a><br> <br>
+                <a id="btnSignup2" class="submit" align="center">Sign-Up</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+}</script>
+
+</html>
